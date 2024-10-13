@@ -7,6 +7,7 @@ dotfiles_dir = "my_dotfiles"
 prehooks = [
   "rm -f ~/.config/ulauncher/*.json",
   "rm -rf ~/.config/nvim",
+  "rm -f ~/.bashrc",
   "mkdir -p ~/.config/zellij ~/.config/nushell",
   "mkdir -p ~/.config/nvim/lua/user",
   "mkdir -p ~/.config/bat/themes",
@@ -31,6 +32,7 @@ gitconfig = { source = "./git/default.gitconfig", target = ".gitconfig" }
 sshconfig = { source = "shell/ssh_config", target = ".ssh/config" }
 
 # shell
+bashrc = { source = "shell/bashrc", target = ".bashrc" }
 starship = { source = "shell/starship.toml", target = ".config/starship.toml" }
 nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
 nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}

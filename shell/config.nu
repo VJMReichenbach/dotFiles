@@ -39,6 +39,12 @@ alias vim = nvim
 alias v = nvim .
 alias cbat = bat --decorations never
 alias cg = cd (git rev-parse --show-toplevel)
+alias sysstat = sudo systemctl status
+alias sysen = sudo systemctl enable
+alias sysdis = sudo systemctl disable
+alias sysstart = sudo systemctl start
+alias sysrest = sudo systemctl restart
+alias sysstop = sudo systemctl stop
 
 # completions
 use ~/nu_scripts/custom-completions/cargo/cargo-completions.nu *

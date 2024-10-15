@@ -56,5 +56,8 @@ use ~/nu_scripts/custom-completions/rustup/rustup-completions.nu *
 use ~/nu_scripts/custom-completions/typst/typst-completions.nu *
 use ~/nu_scripts/custom-completions/zellij/zellij-completions.nu *
 
+# theme
+use ~/nu_scripts/themes/nu-themes/catppuccin-mocha.nu
+
 # Starship
 use ~/.cache/starship/init.nu

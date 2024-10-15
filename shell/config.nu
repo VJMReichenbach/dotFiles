@@ -30,8 +30,9 @@ $env.config = {
 }
 
 # alias
-alias l = eza --all --long --git --icons --group-directories-first --header --smart-group
-alias e = l
+alias e = eza --all --long --git --icons --group-directories-first --header --smart-group
+alias eg = e --group
+alias et = e --tree
 alias ca = cargo mommy
 alias cacu = ca install-update -l
 alias ucap = ca install-update -a

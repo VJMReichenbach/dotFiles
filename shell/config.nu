@@ -29,17 +29,33 @@ $env.config = {
     ]
 }
 
+###########################
 # alias
+# eza
 alias e = eza --all --long --git --icons --group-directories-first --header --smart-group
 alias eg = e --group
 alias et = e --tree
+
+# cargo
 alias ca = cargo mommy
 alias cacu = ca install-update -l
 alias ucap = ca install-update -a
+
+# nvim
 alias vim = nvim
 alias v = nvim .
+
+# bat
 alias cbat = bat --decorations never
+
+# git
 alias cg = cd (git rev-parse --show-toplevel)
+alias ga = git add
+alias gac = git commit -a
+alias gpl = git pull
+alias gpu = git push
+
+# systemctl
 alias sysstat = sudo systemctl status
 alias sysen = sudo systemctl enable
 alias sysdis = sudo systemctl disable

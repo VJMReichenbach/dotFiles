@@ -9,7 +9,6 @@ prehooks = [
   "rm -rf ~/.config/nvim",
   "rm -f ~/.bashrc",
   "mkdir -p ~/.config/zellij ~/.config/nushell",
-  "mkdir -p ~/.config/nvim/lua/user",
   "mkdir -p ~/.config/bat/themes",
   "mkdir -p ~/.config/eza",
 ]

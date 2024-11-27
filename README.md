@@ -47,10 +47,10 @@ git clone git@github.com:VJMReichenbach/dotFiles.git ~/my_dotfiles
 
 Then I like to install a couple programs I find useful:
 
-**Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro  doesn't ship with it.
+**Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro doesn't ship with it.
 
 ```bash
-yay -S --noconfirm firefox thunderbird discord keepassxc catppuccin-cursors-mocha neovim nextcloud-client ulauncher fzf evince
+yay -S --noconfirm firefox thunderbird discord keepassxc catppuccin-cursors-mocha neovim nextcloud-client ulauncher fzf evince xclip
 ```
 
 ______________________________________________________________________

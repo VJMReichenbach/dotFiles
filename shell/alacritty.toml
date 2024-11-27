@@ -22,6 +22,6 @@ bold_italic = { family = "FiraCode Nerd Font Mono", style = "Bold Italic" }
 
 [keyboard]
 bindings = [
-  { key = "P", mods = "Control", action = "None" },
-  { key = "Q", mods = "Control", action = "None" },
+  { key = "P", mods = "Control", action = "ReceiveChar" },
+  { key = "Q", mods = "Control", action = "ReceiveChar" },
 ]

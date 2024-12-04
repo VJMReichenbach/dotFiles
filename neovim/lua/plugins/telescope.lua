@@ -39,6 +39,12 @@ return { -- Fuzzy Finder (files, lsp, etc)
       builtin.find_files,
       { desc = '[F]ind [F]iles' }
     )
+    vim.keymap.set(
+      'n',
+      '<leader>fa',
+      builtin.live_grep,
+      { desc = '[F]ind across [A]ll files' }
+    )
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>fc', function()

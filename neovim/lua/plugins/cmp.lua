@@ -41,8 +41,6 @@ return { -- Autocompletion
       mapping = cmp.mapping.preset.insert {
         -- Select the [n]ext item
         ['<C-n>'] = cmp.mapping.select_next_item(),
-        -- TODO: not working
-        -- Select the [p]revious item
         ['<C-p>'] = cmp.mapping.select_prev_item(),
 
         -- Scroll the documentation window [b]ack / [f]orward

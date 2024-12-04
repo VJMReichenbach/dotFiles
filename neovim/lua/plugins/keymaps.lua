@@ -1,6 +1,37 @@
 local set = vim.keymap.set
 
 return {
+  -- [[ Basic Keymaps ]]
+  --  See `:help set()`
+
+  -- Clear highlights on search when pressing <Esc> in normal mode
+  set('n', '<Esc>', '<cmd>nohlsearch<CR>'),
+
+  -- Open explorer
+  set('n', '<leader>e', vim.cmd.Ex, { desc = 'Open [E]xplorer' }),
+
+  -- Diagnostic keymaps
+  set(
+    'n',
+    '<leader>q',
+    vim.diagnostic.setloclist,
+    { desc = 'Open diagnostic [Q]uickfix list' }
+  ),
+
+  -- Exit terminal mode in the builtin terminal
+  set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }),
+
+  -- Disable arrow keys in normal mode
+  set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>'),
+  set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>'),
+  set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>'),
+  set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>'),
+
+  -- Keybinds to make split navigation easier.
+  set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' }),
+  set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' }),
+  set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' }),
+  set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' }),
   -- Delete inside (){}[]<>"'
   set('n', '<leader>j', 'di(', { desc = 'Delete inside (' }),
   set('n', '<leader>k', 'di{', { desc = 'Delete inside {' }),

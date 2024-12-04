@@ -12,6 +12,12 @@ return {
     require('neo-tree').setup {
       close_if_last_window = true,
       filesystem = {
+        window = {
+          mappings = {
+            -- disable space
+            ['<space>'] = 'noop',
+          },
+        },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,

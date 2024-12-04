@@ -10,11 +10,13 @@ return {
   config = function()
     -- basic options
     require('neo-tree').setup {
-      close_if_last_window = true,
+      -- not needed bacause float position
+      -- close_if_last_window = true,
       filesystem = {
         window = {
+          position = 'float',
           mappings = {
-            -- disable space
+            -- disable space (usually a selector, but <CR> is also ok)
             ['<space>'] = 'noop',
           },
         },

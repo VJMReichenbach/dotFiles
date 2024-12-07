@@ -33,14 +33,6 @@ return {
   set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' }),
   set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' }),
 
-  -- Delete inside (){}[]<>"'
-  set('n', '<leader>j', 'di(', { desc = 'Delete inside (' }),
-  set('n', '<leader>k', 'di{', { desc = 'Delete inside {' }),
-  set('n', '<leader>l', 'di[', { desc = 'Delete inside [' }),
-  set('n', '<leader>h', 'di<', { desc = 'Delete inside <' }),
-  set('n', '<leader>"', 'di"', { desc = 'Delete inside "' }),
-  set('n', "<leader>'", "di'", { desc = "Delete inside '" }),
-
   -- which-key show keymaps
   set(
     'n',

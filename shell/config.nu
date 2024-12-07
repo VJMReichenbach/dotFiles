@@ -51,6 +51,7 @@ alias cbat = bat --decorations never
 # git
 alias cg = cd (git rev-parse --show-toplevel)
 alias ga = git add
+alias gc = git commit
 alias gac = git commit -a
 alias gpl = git pull
 alias gpu = git push

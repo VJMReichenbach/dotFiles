@@ -101,6 +101,7 @@ require('lazy').setup {
   { import = 'plugins' },
 }
 
+require 'keymaps'
 vim.filetype.add {
   extension = {
     gitconfig = 'gitconfig',

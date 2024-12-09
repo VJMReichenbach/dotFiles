@@ -30,19 +30,13 @@ return { -- Autoformatter
         lsp_format = lsp_format_opt,
       }
     end,
-    formatters = {
-      texfmt = {
-        command = 'tex-fmt',
-        args = { '$FILENAME', '--print', '--keep' }, -- conform works via stdout. so use --print
-      },
-    },
     formatters_by_ft = {
       -- Conform can also run multiple formatters sequentially
       lua = { 'stylua' },
       python = { 'black' },
       markdown = { 'mdformat' },
-      -- TODO: doesnt work
-      -- tex = { 'texfmt' },
+      tex = { 'tex-fmt' },
+      typst = { 'typstyle' },
     },
   },
 }

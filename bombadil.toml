@@ -27,9 +27,15 @@ posthooks = [
 # editors
 neovim = { source = "neovim",  target = ".config/nvim" }
 
-# config files
+# gitconfig 
 gitconfig = { source = "./git/default.gitconfig", target = ".gitconfig" }
-sshconfig = { source = "shell/ssh_config", target = ".ssh/config" }
+
+# cli
+bat_config = { source = "cli/bat_config" , target = ".config/bat/config"}
+pycodestyle = { source = "cli/pycodestyle.toml" , target = ".config/pycodestyle"}
+eza = { source = "cli/eza_theme.yml" , target = ".config/eza/theme.yml"}
+lazygit = { source = "cli/lazygit.yml" , target = ".config/lazygit/config.yml"}
+sshconfig = { source = "cli/ssh_config", target = ".ssh/config" }
 
 # shell
 bashrc = { source = "shell/bashrc", target = ".bashrc" }
@@ -38,10 +44,6 @@ nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
 nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
 alacritty = { source = "shell/alacritty.toml" , target = ".alacritty.toml" }
-bat_config = { source = "shell/bat_config" , target = ".config/bat/config"}
-pycodestyle = { source = "shell/pycodestyle.toml" , target = ".config/pycodestyle"}
-eza = { source = "shell/eza_theme.yml" , target = ".config/eza/theme.yml"}
-lazygit = { source = "shell/lazygit.yml" , target = ".config/lazygit/config.yml"}
 
 # ulaucher
 ulauncher_extensions = { source = "ulauncher/extensions.json", target = ".config/ulauncher/extensions.json" }

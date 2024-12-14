@@ -1,23 +1,23 @@
 [User]
-    name = VJMReichenbach
-    email = Valentin.Reichenbach@live.com
+  name = VJMReichenbach
+  email = Valentin.Reichenbach@live.com
 
 # include uni email
 [includeIf "gitdir:~/EldosHD-GitHub/"] # !!! GitHub has an capital "H" !!!
   path = ~/my_dotfiles/git/eldoshd.gitconfig
 
 [core]
-	editor = nvim
+  editor = nvim
 	# this has to be different on windows. "input" is for linux and mac
-	autocrlf = input
+  autocrlf = input
 	# use git-delta as a pager
   pager = delta
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 # git-delta options
 [pull]
-	rebase = false
+  rebase = false
 [interactive]
   diffFilter = delta --color-only
 [delta]

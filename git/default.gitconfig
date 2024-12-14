@@ -2,6 +2,9 @@
   name = VJMReichenbach
   email = Valentin.Reichenbach@live.com
 
+[include]
+  path = ~/.config/delta/catppuccin.gitconfig # delta theme
+
 # include uni email
 [includeIf "gitdir:~/EldosHD-GitHub/"] # !!! GitHub has an capital "H" !!!
   path = ~/my_dotfiles/git/eldoshd.gitconfig
@@ -14,17 +17,16 @@
   pager = delta
 [init]
   defaultBranch = main
-
-# git-delta options
 [pull]
   rebase = false
+[merge]
+  conflictstyle = diff3
+
+# git-delta options
 [interactive]
   diffFilter = delta --color-only
 [delta]
+  features = catppuccin-mocha
   navigate = true
-  features = Catppuccin Mocha
-  dark = true
-[merge]
-  conflictstyle = diff3
 [diff]
   colorMoved = default

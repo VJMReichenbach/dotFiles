@@ -42,7 +42,6 @@ alias cacu = ca install-update -l
 alias ucap = ca install-update -a
 
 # nvim
-alias vim = nvim
 alias v = nvim .
 
 # bat

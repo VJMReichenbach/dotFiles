@@ -18,6 +18,12 @@ $env.DEVKITPPC = '/opt/devkitpro/devkitPPC'
 $env.CARGO_MOMMYS_MOODS = 'chill/ominous/thirsty'
 $env.CARGO_MOMMYS_LITTLE = 'boy/girl'
 
+# lazygit
+let lazygit_base = [$env.HOME, '/.config/lazygit/'] | str join
+let lazygit_conf = [$lazygit_base, 'config.yml'] | str join
+let lazygit_theme = [$lazygit_base, 'catppuccin-mocha-pink.yml'] | str join
+$env.LG_CONFIG_FILE = [$lazygit_conf, "," ,$lazygit_theme] | str join
+
 # Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu

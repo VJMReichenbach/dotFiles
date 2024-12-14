@@ -15,6 +15,10 @@ return {
       filesystem = {
         window = {
           position = 'float',
+          popup = { -- applies to floating window only
+            size = { height = '80%', width = '80%' },
+            position = '50%',
+          },
           mappings = {
             -- disable space (usually a selector, but <CR> is also ok)
             ['<space>'] = 'noop',

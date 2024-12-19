@@ -1,7 +1,3 @@
 #!/bin/bash
 mkdir ~/.config/delta
-git clone https://github.com/catppuccin/delta.git
-cd delta
-cp catppuccin.gitconfig ~/.config/delta
-cd ..
-rm -rf delta
+wget https://raw.githubusercontent.com/catppuccin/delta/refs/heads/main/catppuccin.gitconfig -O ~/.config/delta/catppuccin.gitconfig

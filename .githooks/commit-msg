@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# This hook checks if the commit msg starts with one of the possible values
+
+# This is a sample hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.
+
+valid_starts = "^(Cli|Git|Neovim|Scripts|Shell|Ulauncher|Wallpapers|Readme|Bombadil): "
+
+# Path to the commit message file
+COMMIT_MSG_FILE=$1
+
+# Read the first line of the commit message
+COMMIT_MSG=$(head -n 1 "$COMMIT_MSG_FILE")
+
+if ! [[ $COMMIT_MSG =~ $valid_starts ]]; then
+  echo "Error: Commit message follow format: ${valid_starts}"
+  echo "Your commit message: \"$COMMIT_MSG\""
+  exit 1
+fi
+
+exit 0

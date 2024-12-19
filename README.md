@@ -103,6 +103,14 @@ curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritt
 
 ______________________________________________________________________
 
+You might also want to setup the pre-commit hooks:
+
+```bash
+~/my_dotfiles/scripts/setup_hooks.sh
+```
+
+______________________________________________________________________
+
 Lastly setup toml-bombadil and link the dotfiles:
 
 ```bash

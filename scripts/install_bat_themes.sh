@@ -1,10 +1,3 @@
 #!/bin/bash
-git clone https://github.com/catppuccin/bat.git
-cd bat
-cd themes
 mkdir -p "$(bat --config-dir)/themes"
-cp *.tmTheme "$(bat --config-dir)/themes"
-bat cache --build
-cd ..
-cd ..
-rm -rf bat
+wget https://raw.githubusercontent.com/catppuccin/bat/refs/heads/main/themes/Catppuccin%20Mocha.tmTheme -O ~/.config/bat/themes/Catppuccin\ Mocha.tmTheme

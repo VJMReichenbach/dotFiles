@@ -5,6 +5,8 @@ vim.g.maplocalleader = ' '
 -- Enable 24-bit RGB color in the TUI
 vim.opt.termguicolors = true
 
+vim.opt.clipboard = 'unnamedplus'
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 

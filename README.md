@@ -103,6 +103,14 @@ curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritt
 
 ______________________________________________________________________
 
+Clone the **nu_scripts** repo for autocompletions:
+
+```bash
+git clone git@github.com:nushell/nu_scripts.git ~/nu_scripts
+```
+
+______________________________________________________________________
+
 You might also want to setup the pre-commit hooks:
 
 ```bash
@@ -120,21 +128,11 @@ bombadil link
 
 ### Post Installation Setup
 
-______________________________________________________________________
-
 Set the **GTK-Theme** and the **Mouse Cursor** to Catppuccin-Mocha:
 
 ```bash
 gsettings set org.gnome.desktop.interface gtk-theme Catppuccin-Mocha-Standard-Pink-Dark
 xfconf-query --channel xsettings --property /Gtk/CursorThemeName --set Catppuccin-Mocha-Pink-Cursors
-```
-
-______________________________________________________________________
-
-Clone the **nu_scripts** repo for autocompletions:
-
-```bash
-git clone git@github.com:nushell/nu_scripts.git ~/nu_scripts
 ```
 
 ______________________________________________________________________

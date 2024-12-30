@@ -66,7 +66,7 @@ ______________________________________________________________________
 Next install all additional rust binaries:
 
 ```bash
-cargo binstall eza du-dust bat starship zellij cargo-info cargo-update nu alacritty git-delta ripgrep rm-improved cargo-mommy
+cargo binstall eza du-dust bat starship zellij cargo-info cargo-update nu alacritty git-delta ripgrep rm-improved cargo-mommy kanata
 ```
 
 ______________________________________________________________________
@@ -117,6 +117,18 @@ You might also want to setup the pre-commit hooks:
 ~/my_dotfiles/scripts/setup_hooks.sh
 ```
 
+----------------------------------------------------------------------
+
+When using the **kanata** keyboard config, you should also link the service file and enable the service, so it starts on boot:
+
+```bash
+sudo ln -s ~/.cargo/bin/kanata /usr/bin
+sudo mkdir -p /etc/kanata
+sudo chown valentin:valentin /etc/kanata # modify when using a different user
+sudo ln -s ~/my_dotfiles/keyboard/kanata.service /etc/systemd/system/
+sudo systemctl enable --now kanata
+```
+
 ______________________________________________________________________
 
 Lastly setup toml-bombadil and link the dotfiles:
@@ -125,6 +137,7 @@ Lastly setup toml-bombadil and link the dotfiles:
 bombadil install ~/my_dotfiles
 bombadil link 
 ```
+
 
 ### Post Installation Setup
 

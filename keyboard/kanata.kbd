@@ -1,9 +1,11 @@
 ;; kanata config file
 ;; :set filetype=lisp
 (defsrc
-	CapsLock
+	caps
+	esc
 )
 
 (deflayer default
 	  esc
+	  caps
 )

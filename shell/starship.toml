@@ -9,6 +9,10 @@ palette = "catppuccin_mocha"
 [character]
 disabled = true
 
+[cmd_duration]
+min_time = 1000
+show_milliseconds = true
+
 [status]
 format = '[$status]($style) '
 disabled = false

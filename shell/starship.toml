@@ -5,6 +5,14 @@ add_newline = false
 
 palette = "catppuccin_mocha"
 
+# Disable the arrow because vi mode in nu already shows one
+[character]
+disabled = true
+
+[status]
+format = '[$status]($style) '
+disabled = false
+
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true

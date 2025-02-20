@@ -5,23 +5,23 @@ $env.config = {
     rm: {
         always_trash: true # always act as if -t was given. Can be overridden with -p
     }
-
     show_banner: false
+    edit_mode: vi
     keybindings: [
         {
             name: clear 
             modifier: control
             keycode: char_j 
-            mode: emacs
+            mode: [vi_insert vi_normal]
             event: [
                 { send: ClearScreen } # set clear screen to C-j
             ]
         },
         {
-            name: clear 
+            name: autocomplete 
             modifier: control
             keycode: char_l
-            mode: emacs
+            mode: [vi_insert vi_normal]
             event: [
                 { send: HistoryHintComplete} #  set autocomplete to C-l
             ]

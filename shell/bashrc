@@ -22,6 +22,6 @@ alias sysstart='sudo systemctl start'
 alias sysrest='sudo systemctl restart'
 alias sysstop='sudo systemctl stop'
 
-. "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(starship init bash)"

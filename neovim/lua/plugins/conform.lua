@@ -37,6 +37,7 @@ return { -- Autoformatter
       markdown = { 'mdformat' },
       tex = { 'tex-fmt' },
       typst = { 'typstyle' },
+      html = { 'superhtml' },
     },
   },
 }

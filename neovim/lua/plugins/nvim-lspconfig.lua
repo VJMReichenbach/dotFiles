@@ -137,6 +137,7 @@ return {
       mdformat = {}, -- Markdown formatter
       stylua = {}, -- Lua formatter
       black = {}, -- Python formatter
+      superhtml = {}, -- HTML formatter
     }
 
     -- Ensure the servers and tools above are installed

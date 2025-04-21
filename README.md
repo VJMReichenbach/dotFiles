@@ -50,7 +50,7 @@ Then I like to install a couple programs I find useful:
 **Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro doesn't ship with it.
 
 ```bash
-yay -S --noconfirm firefox thunderbird vesktop-bin keepassxc catppuccin-cursors-mocha neovim nextcloud-client ulauncher fzf evince xclip lazygit
+yay -S --noconfirm firefox thunderbird vesktop-bin keepassxc catppuccin-cursors-mocha neovim nextcloud-client ulauncher fzf evince xclip lazygit btop
 ```
 
 ______________________________________________________________________
@@ -117,7 +117,7 @@ You might also want to setup the pre-commit hooks:
 ~/my_dotfiles/scripts/setup_hooks.sh
 ```
 
-----------------------------------------------------------------------
+______________________________________________________________________
 
 When using the **kanata** keyboard config, you should also link the service file and enable the service, so it starts on boot:
 
@@ -137,7 +137,6 @@ Lastly setup toml-bombadil and link the dotfiles:
 bombadil install ~/my_dotfiles
 bombadil link 
 ```
-
 
 ### Post Installation Setup
 

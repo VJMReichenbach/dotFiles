@@ -3,9 +3,9 @@ Include other.sshconfig # include another ssh config if it exists
 Host github.com # VJMReichenbach GitHub
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_rsa_Uni
+  IdentityFile ~/.ssh/vjmreichenbach_github
   
 Host github-eldoshd # EldosHD GitHub
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_ed25519
+  IdentityFile ~/.ssh/eldoshd_github

@@ -110,5 +110,6 @@ require 'keymaps'
 vim.filetype.add {
   extension = {
     gitconfig = 'gitconfig',
+    sshconfig = 'sshconfig',
   },
 }

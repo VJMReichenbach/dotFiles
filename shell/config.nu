@@ -69,11 +69,16 @@ alias sysrest = sudo systemctl restart
 alias sysstop = sudo systemctl stop
 
 # completions
+use ~/nu_scripts/custom-completions/bat/bat-completions.nu *
+use ~/nu_scripts/custom-completions/curl/curl-completions.nu *
 use ~/nu_scripts/custom-completions/cargo/cargo-completions.nu *
+use ~/nu_scripts/custom-completions/docker/docker-completions.nu *
+use ~/nu_scripts/custom-completions/eza/eza-completions.nu *
 use ~/nu_scripts/custom-completions/git/git-completions.nu *
-use ~/nu_scripts/custom-completions/glow/glow-completions.nu *
 use ~/nu_scripts/custom-completions/make/make-completions.nu *
 use ~/nu_scripts/custom-completions/rustup/rustup-completions.nu *
+use ~/nu_scripts/custom-completions/ssh/ssh-completions.nu *
+use ~/nu_scripts/custom-completions/tar/tar-completions.nu *
 use ~/nu_scripts/custom-completions/typst/typst-completions.nu *
 use ~/nu_scripts/custom-completions/zellij/zellij-completions.nu *
 

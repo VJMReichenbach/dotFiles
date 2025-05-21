@@ -1,4 +1,4 @@
-Include other_ssh_config # include another ssh config if it exists
+Include other.sshconfig # include another ssh config if it exists
 
 Host github.com # VJMReichenbach GitHub
   HostName github.com

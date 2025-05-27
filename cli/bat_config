@@ -1,2 +1,5 @@
 # Set the theme to Catppuccin Mocha
 --theme="Catppuccin Mocha"
+
+# syntax highlighting for .sshconfig
+--map-syntax "*.sshconfig:SSH Config"

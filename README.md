@@ -107,18 +107,12 @@ ______________________________________________________________________
 Before finishing up, install the **catppuccin** themes for **bat**, **delta**, **lazygit** and **ulauncher**:
 
 ```bash
+~/my_dotfiles/scripts/install_alacritty_themes.sh
 ~/my_dotfiles/scripts/install_bat_themes.sh
-~/my_dotfiles/scripts/install_ulauncher_theme.sh
+~/my_dotfiles/scripts/install_btop_theme.sh
 ~/my_dotfiles/scripts/install_delta_themes.sh
 ~/my_dotfiles/scripts/install_lazygit_themes.sh
-```
-
-______________________________________________________________________
-
-You also have get the **alacritty** colorthemes:
-
-```bash
-curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+~/my_dotfiles/scripts/install_ulauncher_theme.sh
 ```
 
 ______________________________________________________________________

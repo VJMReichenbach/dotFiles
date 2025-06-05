@@ -14,6 +14,8 @@ yay -R --noconfirm firefox
 yay -S --noconfirm librewolf-bin
 ```
 
+Then, if desired, go to `settings -> Privacy&Security -> Cookies and Site Data -> Uncheck: Delete cookies and site data when LibreWolf is closed`
+
 After that, install the following extensions:
 
 - [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)

@@ -43,4 +43,7 @@ return {
 
   -- Save on <leader>w
   set('n', '<leader>w', '<cmd>w<CR>', { desc = '[W]rite buffer' }),
+
+  -- show error explanation
+  set('n', '<leader>s', vim.diagnostic.open_float, { desc = '[S]how error' }),
 }

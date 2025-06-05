@@ -4,6 +4,26 @@ This repository contains my dotfiles for my Linux setup. I use [toml-bombadil](h
 
 ## Installation
 
+### Replace firefox
+
+First off, because of Mozilla drama, I replaced firefox with librewolf.
+Since librewolf is in the AUR, you either need to install it manually or use a wrapper like [yay](https://github.com/Jguer/yay).
+
+```bash
+yay -R --noconfirm firefox
+yay -S --noconfirm librewolf-bin
+```
+
+After that, install the following extensions:
+
+- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
+- [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
+- [Floccus](https://addons.mozilla.org/en-US/firefox/addon/floccus/)
+- [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
+- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+
+Log into floccus, after setting up nextcloud.
+
 ### Prerequisites
 
 You need **curl**, **cmake**, **a nerd font**, **rust** and **toml-bombadil** installed.

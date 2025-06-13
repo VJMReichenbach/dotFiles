@@ -45,6 +45,7 @@ return { -- Useful plugin to show you pending keybinds.
       { '<leader>f', group = '[F]ind' },
       { '<leader>r', group = '[R]ename' },
       { '<leader>t', group = '[T]oggle' },
+      { '<leader>l', group = '[L]ove 2D' },
     },
   },
 }

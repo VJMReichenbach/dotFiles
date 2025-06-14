@@ -99,8 +99,12 @@ vim.opt.rtp:prepend(lazypath)
 
 -- [[ Configure and install plugins ]]
 require('lazy').setup {
-  -- import everything from `plugins/*.lua`
-  { import = 'plugins' },
+  spec = {
+    -- import everything from `plugins/*.lua`
+    { import = 'plugins' },
+  },
+  -- automatically check for plugin updates
+  checker = { enabled = true },
 }
 
 -- import keymaps

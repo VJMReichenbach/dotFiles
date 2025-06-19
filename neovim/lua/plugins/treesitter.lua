@@ -2,10 +2,7 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts
-  dependencies = {
-    -- NOTE: additional parser
-    { 'nushell/tree-sitter-nu', build = ':TSUpdate nu' },
-  },
+  dependencies = {},
   -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
   opts = {
     ensure_installed = {

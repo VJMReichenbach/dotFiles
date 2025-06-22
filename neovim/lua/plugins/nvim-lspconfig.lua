@@ -123,6 +123,8 @@ return {
       rust_analyzer = {}, -- Rust language server
       lua_ls = {}, -- Lua language server
       texlab = {}, -- LaTeX language server
+      ltex_plus = {}, -- Spell and grammar checking
+      tinymist = {}, -- Typst lsp
     }
 
     -- Ensure the servers and tools above are installed

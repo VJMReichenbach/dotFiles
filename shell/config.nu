@@ -32,6 +32,10 @@ $env.config = {
 ###########################
 # alias
 
+# rm
+# removes neovim config
+alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/my_dotfiles/.dots/
+
 # xclip
 # copys input to clipboard
 alias clipboard = xclip -selection clipboard

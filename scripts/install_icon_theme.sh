@@ -4,16 +4,16 @@ echo "Installing Icon Theme"
 echo "###########################"
 
 # create icons folder
-mkdir -p "~/.icons"
-cd ~/.icons
+mkdir -p ~/.icons
+cd ~/.icons || exit 1
 
 # remove previous installation
-rm master.zip
+rm -f master.zip
 rm -rf candy-icons
 
 # install theme
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-unzip master
+unzip master.zip
 rm master.zip
 mv candy-icons-master candy-icons
 
@@ -22,3 +22,4 @@ gtk-update-icon-cache ~/.icons/candy-icons/
 
 # set icon theme
 gsettings set org.gnome.desktop.interface icon-theme candy-icons
+

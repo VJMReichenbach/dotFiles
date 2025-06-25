@@ -106,13 +106,14 @@ Then just set up a keyboard shortcut in your WM settings for launching `/absolut
 
 ______________________________________________________________________
 
-Before finishing up, install the **catppuccin** themes for **bat**, **delta**, **lazygit** and **ulauncher**:
+Before finishing up, install the **catppuccin** themes for **alacritty**, **bat**, **btop**, **delta**, **lazygit** and **ulauncher** and also the [candy-icons](https://github.com/EliverLara/candy-icons) icon pack:
 
 ```bash
 ~/my_dotfiles/scripts/install_alacritty_themes.sh
 ~/my_dotfiles/scripts/install_bat_themes.sh
 ~/my_dotfiles/scripts/install_btop_theme.sh
 ~/my_dotfiles/scripts/install_delta_themes.sh
+~/my_dotfiles/scripts/install_icon_theme.sh
 ~/my_dotfiles/scripts/install_lazygit_themes.sh
 ~/my_dotfiles/scripts/install_ulauncher_theme.sh
 ```

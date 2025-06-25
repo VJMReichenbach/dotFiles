@@ -13,7 +13,7 @@ rm -rf candy-icons
 
 # install theme
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-unzip master.zip
+unzip -q master.zip
 rm master.zip
 mv candy-icons-master candy-icons
 

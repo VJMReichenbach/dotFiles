@@ -12,6 +12,8 @@ prehooks = [
   "mkdir -p ~/.config/bat/themes",
   "mkdir -p ~/.config/eza",
   "mkdir -p ~/.config/lazygit",
+  "mkdir -p ~/.config/hypr/",
+  "mkdir -p ~/.config/waybar/",
 ]
 
 posthooks = [
@@ -52,3 +54,7 @@ alacritty = { source = "shell/alacritty.toml" , target = ".alacritty.toml" }
 ulauncher_extensions = { source = "ulauncher/extensions.json", target = ".config/ulauncher/extensions.json" }
 ulauncher_settings = { source = "ulauncher/settings.json", target = ".config/ulauncher/settings.json" }
 ulauncher_shortcuts = { source = "ulauncher/shortcuts.json", target = ".config/ulauncher/shortcuts.json" }
+
+# desktop
+hyprland_config = { source = 'desktop/hyprland.conf', target = ".config/hypr/hyprland.conf"}
+# waybar_config = { source = 'desktop/waybar.conf', target = ".config/hypr/hyprland.conf"}

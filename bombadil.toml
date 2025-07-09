@@ -57,5 +57,6 @@ ulauncher_shortcuts = { source = "ulauncher/shortcuts.json", target = ".config/u
 
 # desktop
 hyprland_config = { source = 'desktop/hyprland.conf', target = ".config/hypr/hyprland.conf"}
+hyprpaper_config = { source = 'desktop/hyprpaper.conf', target = ".config/hypr/hyprpaper.conf"}
 waybar_config = { source = 'desktop/waybar/config.jsonc', target = ".config/waybar/config.jsonc"}
 waybar_css = { source = 'desktop/waybar/style.css', target = ".config/waybar/style.css"}

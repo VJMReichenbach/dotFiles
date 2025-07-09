@@ -36,6 +36,9 @@ $env.config = {
 # removes neovim config
 alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/my_dotfiles/.dots/
 
+# kills currently running waybar instances and starts a new one
+def refresh-waybar [] {pkill waybar; hyprctl dispatch exec waybar}
+
 # xclip
 # copys input to clipboard
 alias clipboard = xclip -selection clipboard

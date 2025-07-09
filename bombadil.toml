@@ -17,7 +17,6 @@ prehooks = [
 posthooks = [
   "mkdir -p ~/GitHub",
   "mkdir -p ~/EldosHD-GitHub",
-  "eos-wallpaper-set ~/my_dotfiles/wallpapers/hearts.png",
   "touch ~/.ssh/other.sshconfig"
 ]
 

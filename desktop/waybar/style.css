@@ -2,7 +2,6 @@
     font-family: FiraCode Nerd Font Mono;
     font-size: 18px;
     color: #cdd6f4;
-    border: none;
     border-radius: 20px;
 }
 
@@ -18,7 +17,6 @@ window#waybar {
     margin: 2px 0 0 0;
 }
 .modules-left {
-    background-color: rgba(30, 30, 46, 0.7);
     margin: 2px 0 0 5px;
 }
 /*-----modules indv----*/
@@ -30,6 +28,8 @@ window#waybar {
 #window,
 #workspaces {
     margin: 0 4px;
+    border: 2px solid #cdd6f4;
+    background-color: rgba(30, 30, 46, 0.7);
 }
 
 #workspaces button {
@@ -63,6 +63,7 @@ window#waybar {
 #language,
 #custom-power {
     background-color: rgba(30, 30, 46, 0.7);
+    border: 2px solid #cdd6f4;
     padding: 0 10px;
 }
 
@@ -111,17 +112,13 @@ window#waybar {
     color: #1e1e2e;
 }
 
-#tray {
-    background-color: #2980b9;
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #f38ba8;
 }
 
 #language {

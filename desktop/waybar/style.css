@@ -99,10 +99,6 @@ to {
     background-color: #eb4d4b;
 }
 
-#backlight {
-    background-color: #90b1b1;
-}
-
 #pulseaudio.muted {
     background-color: #f38ba8;
     color: #1e1e2e;

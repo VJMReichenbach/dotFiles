@@ -9,7 +9,22 @@ return {
     'mason-org/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
 
-    { 'j-hui/fidget.nvim', opts = {} },
+    {
+      'j-hui/fidget.nvim',
+      opts = {
+        progress = {
+          display = {
+            render_limit = 5,
+          },
+        },
+        notification = {
+          window = {
+            winblend = 0,
+            border = 'rounded',
+          },
+        },
+      },
+    },
 
     -- Allows extra capabilities provided by blink.cmp
     'saghen/blink.cmp',

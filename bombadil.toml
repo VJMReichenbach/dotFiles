@@ -62,6 +62,7 @@ hyprpaper_config = { source = 'desktop/hyprpaper.conf', target = ".config/hypr/h
 waybar_config = { source = 'desktop/waybar/config.jsonc', target = ".config/waybar/config.jsonc"}
 waybar_css = { source = 'desktop/waybar/style.css', target = ".config/waybar/style.css"}
 waybar_css_extra = { source = 'desktop/waybar/default_import.css', target = ".config/waybar/profile_specific.css"}
+waybar_powermenu = { source = 'desktop/waybar/power_menu.xml', target = ".config/waybar/power_menu.xml"}
 
 [profiles.desktop.dots]
 hyprland_monitors = { source = 'desktop/monitors_desktop.conf' }

@@ -37,7 +37,10 @@ $env.config = {
 alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/my_dotfiles/.dots/
 
 # kills currently running waybar instances and starts a new one
-def refresh-waybar [] {pkill waybar; hyprctl dispatch exec waybar}
+def refresh-waybar [] {
+    do -i {pkill waybar} # ignores errors
+    hyprctl dispatch exec waybar
+}
 
 # xclip
 # copys input to clipboard

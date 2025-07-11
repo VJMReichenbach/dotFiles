@@ -1,6 +1,6 @@
+@import url("profile_specific.css");
 * {
     font-family: FiraCode Nerd Font Mono;
-    font-size: 18px;
     color: #cdd6f4;
     border-radius: 20px;
 }

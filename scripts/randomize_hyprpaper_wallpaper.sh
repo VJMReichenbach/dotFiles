@@ -1,16 +1,54 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="$HOME/wallpapers/"
 CURRENT_WALL=$(hyprctl hyprpaper listloaded)
 
-# Find wallpapers, excluding .git directories, .gitattributes, and *.gif
-WALLPAPERS=$(find "$WALLPAPER_DIR" -type f \
-    ! -path "*/.git/*" \
-    ! -name ".gitattributes" \
-    ! -iname "*.gif")
+WALLPAPER_DIR="$HOME/wallpapers"
 
-# Filter out current wallpaper and pick a random one
-WALLPAPER=$(echo "$WALLPAPERS" | grep -v "$CURRENT_WALL" | shuf -n 1)
+# File‑names only ─ easier to maintain
+WALLPAPERS=(
+  "aesthetic.jpg"
+  "artificial-valley.jpg"
+  "asian-village.png"
+  "astronaut.png"
+  "biking-sunset.jpg"
+  "black-hole.png"
+  "bluehour.jpg"
+  "cabin-2.jpg"
+  "cabin-4.png"
+  "call-it-a-day.jpg"
+  "castle.png"
+  "city-horizon.jpg"
+  "city-on-water.jpg"
+  "clearing.png"
+  "clouds-2.png"
+  "clouds-3.jpg"
+  "clouds-3.png"
+  "corals-fish-underwater.jpg"
+  "cottages-river.png"
+  "crane.png"
+  "dark-forest.jpg"
+  "day-forst-path.png"
+  "degirled.png"
+  "desolate-city.jpg"
+  "disco.png"
+)
+
+# Filter out the current wallpaper and pick a random one
+AVAILABLE_WALLS=()
+for wall in "${WALLPAPERS[@]}"; do
+    # send notification if file doesnt exist
+    if [[ ! -f "$WALLPAPER_DIR/$wall" ]]; then
+        notify-send "Wallpaper not found" "$wall does not exist" --urgency=critical
+    fi
+
+    # add wallpaper to available wallpapers if it is not the current one
+    if [[ "$WALLPAPER_DIR/$wall" != "$CURRENT_WALL" ]]; then
+        AVAILABLE_WALLS+=("$WALLPAPER_DIR/$wall")
+    fi
+done
+
+# Pick a random wallpaper
+RANDOM_WALLPAPER="${AVAILABLE_WALLS[RANDOM % ${#AVAILABLE_WALLS[@]}]}"
 
 # Apply the selected wallpaper
-hyprctl hyprpaper reload ,"$WALLPAPER"
+hyprctl hyprpaper reload ,"$RANDOM_WALLPAPER"

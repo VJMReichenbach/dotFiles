@@ -15,6 +15,7 @@ prehooks = [
   "mkdir -p ~/.config/lazygit",
   "mkdir -p ~/.config/hypr/",
   "mkdir -p ~/.config/waybar/",
+  "mkdir -p ~/.config/wofi/",
 ]
 
 posthooks = [
@@ -64,6 +65,7 @@ waybar_config = { source = 'desktop/waybar/config.jsonc', target = ".config/wayb
 waybar_css = { source = 'desktop/waybar/style.css', target = ".config/waybar/style.css"}
 waybar_css_extra = { source = 'desktop/waybar/default_import.css', target = ".config/waybar/profile_specific.css"}
 waybar_powermenu = { source = 'desktop/waybar/power_menu.xml', target = ".config/waybar/power_menu.xml"}
+wofi_css = { source = 'desktop/wofi/style.css', target = ".config/wofi/style.css"}
 dunstrc = { source = "desktop/dunstrc", target = ".config/dunst/dunstrc" }
 
 [profiles.desktop.dots]

@@ -48,15 +48,7 @@ Then I like to install a couple programs I find useful:
 **Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro doesn't ship with it.
 
 ```bash
-yay -S --noconfirm thunderbird vesktop-bin keepassxc catppuccin-cursors-mocha neovim nextcloud-client ulauncher fzf evince xclip lazygit btop thunar
-```
-
-______________________________________________________________________
-
-Remember to also start the ulauncher deamon:
-
-```bash
-systemctl --user enable --now ulauncher
+yay -S --noconfirm thunderbird vesktop-bin keepassxc catppuccin-cursors-mocha neovim nextcloud-client fzf evince xclip lazygit btop thunar
 ```
 
 ______________________________________________________________________
@@ -79,7 +71,6 @@ Before finishing up, install the **catppuccin** themes for **alacritty**, **bat*
 ~/my_dotfiles/scripts/install_icon_theme.sh
 ~/my_dotfiles/scripts/install_hyprland_colors.sh
 ~/my_dotfiles/scripts/install_lazygit_themes.sh
-~/my_dotfiles/scripts/install_ulauncher_theme.sh
 ```
 
 ______________________________________________________________________

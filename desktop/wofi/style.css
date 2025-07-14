@@ -52,7 +52,7 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'Inconsolata Nerd Font', monospace;
+  font-family: 'FiraCode Nerd Font Mono', monospace;
   font-size: 14px;
 }
 
@@ -121,12 +121,12 @@ window {
   border-radius: 0.1em;
   color: @text;
   background-color: @base;
-  animation: fadeIn 0.5s ease-in-out both;
+  animation: fadeIn 0.1s ease-in-out both;
 }
 
 #input image {
     border: none;
-    color: @red;
+    color: @pink;
 }
 
 #input * {
@@ -138,7 +138,7 @@ window {
   margin: 5px;
   border: none;
   color: @text;
-  animation: fadeIn 0.5s ease-in-out both;
+  animation: fadeIn 0.1s ease-in-out both;
 }
 
 #entry {
@@ -152,11 +152,11 @@ window {
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid @lavender;
+  border: 0.11em solid @pink;
 }
 
 #entry:selected #text {
-  color: @mauve;
+  color: @text;
 }
 
 #entry:drop(active) {

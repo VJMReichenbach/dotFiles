@@ -19,7 +19,7 @@ also, run the install script for the catppuccin mocha colors for hyprland:
 ~/my_dotfiles/scripts/install_hyprland_colors.sh
 ```
 
-lastly, clone this repo:
+lastly, clone [this](https://github.com/orangci/walls-catppuccin-mocha) repo that contains a bunch of wallpapers I like:
 
 ```bash
 git clone https://github.com/orangci/walls-catppuccin-mocha ~/wallpapers

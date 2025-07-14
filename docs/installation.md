@@ -1,10 +1,6 @@
-# My Dotfiles
+# Installation
 
-This repository contains my dotfiles for my Linux setup. I use [toml-bombadil](https://github.com/oknozor/toml-bombadil) to manage my dotfiles.
-
-## Installation
-
-### Prerequisites
+## Prerequisites
 
 You need **curl**, **cmake**, **a nerd font**, **rust** and **toml-bombadil** installed.
 
@@ -35,7 +31,7 @@ I'll also install **cargo-binstall** to speed up later installations:
 cargo install cargo-binstall
 ```
 
-### Installing the dotfiles and dependencies
+## Installing the dotfiles and dependencies
 
 First you need to clone this repository:
 

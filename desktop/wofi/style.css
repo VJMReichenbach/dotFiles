@@ -50,6 +50,7 @@
 @define-color	mantle-rgb  rgb(24, 24, 37);
 @define-color	crust  #11111b;
 @define-color	crust-rgb  rgb(17, 17, 27);
+@define-color	base-transparent rgba(30, 30, 46, 0.8);
 
 * {
   font-family: 'FiraCode Nerd Font Mono', monospace;
@@ -60,9 +61,8 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 0.16em solid @mauve;
-  border-radius: 0.1em;
-  background-color: @base;
+  border: none;
+  background-color: rgba(0,0,0,0);
   animation: slideIn 0.1s ease-in-out both;
 }
 
@@ -82,8 +82,9 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: @base;
+  background-color: rgba(0,0,0,0);
   animation: fadeIn 0.1s ease-in-out both;
+  opacity: 0.8;
 }
 
 /* Fade In */
@@ -102,7 +103,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: @base;
+  background-color: rgba(0,0,0,0);
 }
 
 /* Scroll */
@@ -110,17 +111,20 @@ window {
   margin: 0px;
   padding: 10px;
   border: none;
-  background-color: @base;
+  border-radius: 15px;
+  /* background-color: @base-transparent; */
+  background-color: rgba(0,0,0,0);
 }
 
 /* Input */
 #input {
   margin: 5px 20px;
   padding: 10px;
+  /* border: 0.11em solid @base-transparent; */
   border: none;
-  border-radius: 0.1em;
+  border-radius: 15px;
   color: @text;
-  background-color: @base;
+  background-color: @base-transparent;
   animation: fadeIn 0.1s ease-in-out both;
 }
 
@@ -142,7 +146,7 @@ window {
 }
 
 #entry {
-  background-color: @base;
+  background-color: @base-transparent;
 }
 
 #entry arrow {

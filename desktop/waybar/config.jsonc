@@ -26,10 +26,9 @@
     ],
     // Modules configuration
     "hyprland/workspaces": {
-        // TODO: 
-       //  "persistent-workspaces": {
-       //       "*": 5, // 5 workspaces by default on every monitor
-       // }
+        "persistent-workspaces": {
+             "*": 6, // 5 workspaces by default on every monitor
+       },
         "format": "{name}: {icon}",
 	"format-icons": {
 		"1": "",

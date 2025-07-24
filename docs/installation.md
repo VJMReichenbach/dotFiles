@@ -31,6 +31,12 @@ I'll also install **cargo-binstall** to speed up later installations:
 cargo install cargo-binstall
 ```
 
+or install it from your package manager:
+
+```bash
+yay -S --noconfirm cargo-binstall
+```
+
 ## Installing the dotfiles and dependencies
 
 First you need to clone this repository:

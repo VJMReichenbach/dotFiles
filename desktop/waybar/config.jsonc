@@ -5,6 +5,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "hyprland/submap",
         "hyprland/workspaces",
     ],
     "modules-center": [
@@ -38,6 +39,10 @@
 		"5": "",
 		"default": ""
 	},
+    },
+    "hyprland/submap": {
+        "format": "{}",
+        "tooltip": false
     },
     "keyboard-state": {
         "numlock": true,

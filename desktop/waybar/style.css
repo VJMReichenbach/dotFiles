@@ -37,6 +37,10 @@ window#waybar {
     color: #cdd6f4;
 }
 
+#workspaces button.active label {
+    color: #f5c2e7;
+}
+
 #workspaces button.active {
     background-color: #585b70;
 }
@@ -62,6 +66,7 @@ window#waybar {
 #keyboard-state,
 #language,
 #battery,
+#submap,
 #custom-power {
     background-color: rgba(30, 30, 46, 0.7);
     border: 2px solid #cdd6f4;

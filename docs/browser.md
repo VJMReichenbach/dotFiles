@@ -15,6 +15,7 @@ After that, install the following extensions:
 - [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
 - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
 - [Floccus](https://addons.mozilla.org/en-US/firefox/addon/floccus/)
+- [Indie Wiki Buddy](https://getindie.wiki/)
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
 - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)

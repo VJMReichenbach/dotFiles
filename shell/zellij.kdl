@@ -212,12 +212,18 @@ plugins {
     tab-bar { path "tab-bar"; }
     status-bar { path "status-bar"; }
     strider { path "strider"; }
-    compact-bar { path "compact-bar"; }
+
+    // enable compact mode with tooltips
+    compact-bar location="zellij:compact-bar" {
+        tooltip "F1"
+    }
 }
 theme "catppuccin-mocha"
 
 default_mode "locked"
 
 default_shell "nu"
+
+default_layout "compact"
 
 show_startup_tips false

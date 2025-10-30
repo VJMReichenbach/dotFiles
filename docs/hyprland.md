@@ -30,12 +30,16 @@ git clone https://github.com/orangci/walls-catppuccin-mocha ~/wallpapers
 To set the Qt Theme correctly install the following programs
 
 ```bash
-yay -S --noconfirm kvantum kvantum-qt5 qt5ct qt6ct
+yay -S --noconfirm qt5ct qt6ct
 ```
 
-Then clone [this](https://github.com/catppuccin/Kvantum) repo, install the desired catppuccin kvantum theme using **Kvantum Manager** (search using rofi or use command `kvantummanager`) and set it under _Change/Delete Theme_.
+Install the QT theme:
+
+```bash
+~/my_dotfiles/scripts/install_qt_theme.sh
+```
 
 Lastly open `qt5ct` (or search for _QT5 Settings_) and `qt6ct` (or search for _QT6 Settings_) respectivly and set:
 
-- Syle: **kvantum-dark**
-- Color scheme: **Style's colors**
+- Syle: **Windows**
+- Color scheme: **catppuccin-mocha-pink**

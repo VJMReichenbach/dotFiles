@@ -8,6 +8,7 @@ prehooks = [
   "rm -f ~/.config/ulauncher/*.json",
   "rm -rf ~/.config/nvim",
   "rm -f ~/.bashrc",
+  "rm -f ~/.profile",
   "mkdir -p ~/.config/zellij ~/.config/nushell",
   "mkdir -p ~/.config/bat/themes",
   "mkdir -p ~/.config/dunst/",
@@ -46,6 +47,7 @@ sshconfig = { source = "cli/ssh_config", target = ".ssh/config" }
 
 # shell
 bashrc = { source = "shell/bashrc", target = ".bashrc" }
+profile = { source = "shell/profile", target = ".profile" }
 starship = { source = "shell/starship.toml", target = ".config/starship.toml" }
 nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
 nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}

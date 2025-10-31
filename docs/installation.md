@@ -118,4 +118,5 @@ Take a look at:
 
 - [browser setup](/docs/browser.md)
 - [hyprland setup](/docs/hyprland.md)
+- [greeter setup](/docs/greeter.md)
 - [post-installation setup](/docs/post-installation.md)

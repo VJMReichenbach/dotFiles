@@ -28,6 +28,9 @@ This alone is sufficient, however since greetd starts as soon as possible, boot 
 If you don't want to disable boot messages, you can make sure greetd starts after the boot process is done by editing `/etc/systemd/system/greetd.service.d/override.conf`:
 
 ```ini
+[Unit]
+After=multi-user.target
+
 [Service]
 Type=idle
 ```

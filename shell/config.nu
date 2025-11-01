@@ -47,6 +47,8 @@ $env.config.keybindings ++= [{
     }
 }]
 
+$env.config.completions.partial = true
+
 ###########################
 # alias
 

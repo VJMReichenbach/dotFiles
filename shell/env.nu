@@ -1,8 +1,8 @@
+use std/util "path add"
 # Definition of env variables
 
 ## PATH
-$env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/.cargo/bin")
-$env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/go/bin")
+path add "~/go/bin"
 
 ## EPICS
 # $env.EPICS_BASE = ([$env.HOME, '/EPICS/epics-base'] | str join)

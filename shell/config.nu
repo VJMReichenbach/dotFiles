@@ -64,7 +64,7 @@ def refresh-waybar [] {
 
 # xclip
 # copys input to clipboard
-alias clipboard = xclip -selection clipboard
+alias clipboard = wl-copy
 
 # eza
 alias e = eza --all --long --git --icons --group-directories-first --header --smart-group

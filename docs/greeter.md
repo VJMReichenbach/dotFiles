@@ -22,7 +22,7 @@ for f in ~/.greeter_conf/*; do
 done
 ```
 
-Lastly you have to modify the permissions of a few directories, so that the `greeter` user will be able to read the config files content.
+Next, you have to modify the permissions of a few directories, so that the `greeter` user will be able to read the config files content.
 
 ```bash
 chmod o+x ~
@@ -34,4 +34,16 @@ chmod o+rx ~/.greeter_conf
 
 ```bash
 chmod o+r ~/.greeter_conf/*
+```
+
+Lastly, you have to install your GTK themes and icon theme system wide, so regreet can find them. Make sure the locations in the following commands are correct.
+
+```bash
+sudo mkdir -p /usr/share/themes
+sudo cp -r ~/.local/share/themes/* /usr/share/themes/
+```
+
+```bash
+sudo mkdir -p /usr/share/icons
+sudo cp -r ~/.icons/* /usr/share/icons/
 ```

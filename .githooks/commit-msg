@@ -6,7 +6,7 @@
 # Called by "git commit" with one argument, the name of the file
 # that has the commit message.
 
-valid_starts="^(Cli|Desktop|Docs|Git|Keyboard|License|Neovim|Scripts|Shell|Ulauncher|Wallpapers|Bombadil): "
+valid_starts="^(Cli|Desktop|Docs|Git|Keyboard|License|Multi|Neovim|Scripts|Shell|Ulauncher|Wallpapers|Bombadil): "
 
 # Path to the commit message file
 COMMIT_MSG_FILE=$1

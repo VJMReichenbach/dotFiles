@@ -1,0 +1,29 @@
+[GTK]
+application_prefer_dark_theme = true
+
+# Icon theme name
+icon_theme_name = "candy-icons"
+
+# GTK theme name
+theme_name = "catppuccin-mocha-pink-standard+default-dark"
+
+[commands]
+reboot = ["systemctl", "reboot"]
+poweroff = ["systemctl", "poweroff"]
+
+[appearance]
+greeting_msg = "Hi Vali <3"
+
+
+[widget.clock]
+# strftime format argument
+# See https://docs.rs/jiff/0.1.14/jiff/fmt/strtime/index.html#conversion-specifications
+format = "%F %A %H:%M:%S"
+
+# How often to update the text
+resolution = "100ms"
+
+# Override system timezone (IANA Time Zone Database name, aka /etc/zoneinfo path)
+# Remove to use the system time zone.
+timezone = "Europe/Berlin"
+

@@ -3,7 +3,7 @@
 Starting Hyprland via tty is normally sufficient, but in case you want to use something more advanced you can use a greeter.
 
 ```bash
-yay -S greetd greetd-agreety greetd-tuigreet
+yay -S greetd greetd-agreety greetd-regreet
 ```
 
 Then enable `greetd`:
@@ -12,27 +12,26 @@ Then enable `greetd`:
 sudo systemctl enable greetd
 ```
 
-Then edit the greetd config:
+Then create the links to the greeter config files in the home directory:
+This directory is created by `bombadil link`.
+So run that command, if they don't exist yet.
 
-```toml
-[terminal]
-vt = 1
-
-[default_session]
-
-command = "tuigreet --issue --time --asterisks --asterisks-char='+'"
-user = "greeter"
+```bash
+for f in ~/.greeter_conf/*; do
+    [ -f "$f" ] && sudo ln -sf "$f" /etc/greetd/$(basename "$f")
+done
 ```
 
-This alone is sufficient, however since greetd starts as soon as possible, boot messages still litter the screen when tuigreet starts.
-If you don't want to disable boot messages, you can make sure greetd starts after the boot process is done by editing `/etc/systemd/system/greetd.service.d/override.conf`:
+Lastly you have to modify the permissions of a few directories, so that the `greeter` user will be able to read the config files content.
 
-```ini
-[Unit]
-After=multi-user.target
-
-[Service]
-Type=idle
+```bash
+chmod o+x ~
 ```
 
-Now you can reboot.
+```bash
+chmod o+rx ~/.greeter_conf
+```
+
+```bash
+chmod o+r ~/.greeter_conf/*
+```

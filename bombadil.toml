@@ -17,6 +17,7 @@ prehooks = [
   "mkdir -p ~/.config/hypr/",
   "mkdir -p ~/.config/waybar/",
   "mkdir -p ~/.config/wofi/",
+  "mkdir -p ~/.greeter_conf/"
 ]
 
 posthooks = [
@@ -70,6 +71,11 @@ waybar_css_extra = { source = 'desktop/waybar/default_import.css', target = ".co
 waybar_powermenu = { source = 'desktop/waybar/power_menu.xml', target = ".config/waybar/power_menu.xml"}
 wofi_css = { source = 'desktop/wofi/style.css', target = ".config/wofi/style.css"}
 dunstrc = { source = "desktop/dunstrc", target = ".config/dunst/dunstrc" }
+
+# greeter
+greetd = { source = 'greeter/config.toml', target = ".greeter_conf/config.toml"}
+regreet = { source = 'greeter/regreet.toml', target = ".greeter_conf/regreet.toml"}
+hyprland_greeter = { source = 'greeter/hyprland.conf', target = ".greeter_conf/hyprland.conf"}
 
 [profiles.desktop.dots]
 hyprland_monitors = { source = 'desktop/monitors_desktop.conf' }

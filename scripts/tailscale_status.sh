@@ -2,7 +2,7 @@
 
 # Check if tailscale is running
 if ! pgrep -x tailscaled >/dev/null 2>&1; then
-    echo '{"text": "󰖂", "tooltip": "Tailscale: not running", "class": "down"}'
+    echo '{"text": "", "tooltip": "Tailscale daemon not running", "class": "down"}'
     exit 0
 fi
 

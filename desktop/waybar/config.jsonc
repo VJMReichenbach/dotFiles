@@ -14,11 +14,7 @@
     "modules-right": [
         "pulseaudio",
         "network",
-        "cpu",
-        "memory",
-        "temperature",
         "backlight",
-        // "keyboard-state",
         "sway/language",
         "battery",
         "battery#bat2",

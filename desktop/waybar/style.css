@@ -58,6 +58,7 @@ window#waybar {
 #battery,
 #cpu,
 #memory,
+#custom-tailscale,
 #temperature,
 #backlight,
 #network,
@@ -137,13 +138,6 @@ to {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
-}
-
-#custom-tailscale {
-    background-color: rgba(30, 30, 46, 0.7);
-    border: 2px solid #cdd6f4;
-    padding: 0 10px;
-    margin: 0 5px;
 }
 
 #custom-tailscale.up {

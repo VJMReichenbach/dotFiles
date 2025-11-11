@@ -139,3 +139,17 @@ to {
     background: rgba(0, 0, 0, 0.2);
 }
 
+#custom-tailscale {
+    background-color: rgba(30, 30, 46, 0.7);
+    border: 2px solid #cdd6f4;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#custom-tailscale.up {
+    color: #a6e3a1; /* Catppuccin green */
+}
+
+#custom-tailscale.down {
+    color: #f38ba8; /* Catppuccin red */
+}

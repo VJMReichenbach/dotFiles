@@ -10,6 +10,7 @@
     ],
     "modules-center": [
         "clock",
+        "custom/tailscale",
     ],
     "modules-right": [
         "pulseaudio",
@@ -139,5 +140,12 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    },
+    "custom/tailscale": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/tailscale_status.sh",
+        "interval": 10,
+        "return-type": "json",
+        "tooltip": true
     }
 }

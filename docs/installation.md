@@ -50,7 +50,7 @@ Then I like to install a couple programs I find useful:
 **Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro doesn't ship with it.
 
 ```bash
-yay -S --noconfirm thunderbird vesktop-bin keepassxc catppuccin-cursors-mocha neovim nextcloud-client fzf evince xclip lazygit btop thunar
+yay -S --noconfirm thunderbird vesktop-bin bitwarden catppuccin-cursors-mocha neovim nextcloud-client fzf evince xclip lazygit btop thunar
 ```
 
 ______________________________________________________________________

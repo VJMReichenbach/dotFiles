@@ -16,7 +16,7 @@ After that, install the following extensions:
 - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
 - [Floccus](https://addons.mozilla.org/en-US/firefox/addon/floccus/)
 - [Indie Wiki Buddy](https://getindie.wiki/)
-- [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
+- [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
 - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 

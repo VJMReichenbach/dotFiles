@@ -105,6 +105,14 @@ sudo systemctl enable --now kanata
 
 ______________________________________________________________________
 
+Enable the `fwupd-refresh.timer` to automatically download the latest metadata from LVFS:
+
+```bash
+sudo systemctl enable --now fwupd-refresh.timer
+```
+
+______________________________________________________________________
+
 Lastly setup toml-bombadil and link the dotfiles:
 
 ```bash

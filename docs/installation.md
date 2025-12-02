@@ -34,7 +34,7 @@ sudo pacman -S --noconfirm alacritty bat bitwarden btop cargo-binstall dust evin
 ______________________________________________________________________
 
 A few programs I use are only in the [AUR](https://aur.archlinux.org/).
-To install them automatically, use a packman wrapper like [yay](https://github.com/Jguer/yay).
+To install them automatically, use a pacman wrapper like [yay](https://github.com/Jguer/yay).
 Then you can install them all at once:
 
 ```bash

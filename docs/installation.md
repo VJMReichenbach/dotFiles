@@ -27,7 +27,7 @@ Then I like to install a couple programs I find useful:
 **Arch**:
 
 ```bash
-sudo pacman -S --noconfirm alacritty bat bitwarden btop cargo-binstall dust evince eza fzf git-delta lazygit neovim nextcloud-client nushell ripgrep rust starship thunar thunderbird zellij
+sudo pacman -S --noconfirm alacritty bat bitwarden btop cargo-binstall dust evince eza fzf ghostty git-delta lazygit neovim nextcloud-client nushell ripgrep rust starship thunar thunderbird zellij
 
 ```
 

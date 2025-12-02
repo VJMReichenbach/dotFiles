@@ -9,33 +9,10 @@ You need **curl**, **cmake**, **a nerd font**, **rust** and **toml-bombadil** in
 **Arch**:
 
 ```bash
-sudo pacman -S --noconfirm curl cmake ttf-firacode-nerd noto-fonts-emoji toml-bombadil rust
+sudo pacman -S --noconfirm curl cmake ttf-firacode-nerd noto-fonts-emoji toml-bombadil
 ```
 
 ______________________________________________________________________
-
-<details>
-<summary>Alternative: Rust via rustup</summary>
-
-Alternativly, you can get **Rust** from [rustup](https://rustup.rs/):
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-</details>
-
-I'll also install **cargo-binstall** to speed up later installations:
-
-```bash
-cargo install cargo-binstall
-```
-
-or install it from your package manager:
-
-```bash
-yay -S --noconfirm cargo-binstall
-```
 
 ## Installing the dotfiles and dependencies
 
@@ -47,18 +24,29 @@ git clone git@github.com:VJMReichenbach/dotFiles.git ~/my_dotfiles
 
 Then I like to install a couple programs I find useful:
 
-**Arch**: I use `yay` for installing from the AUR. You'll need to install `yay`, if your distro doesn't ship with it.
+**Arch**:
 
 ```bash
-yay -S --noconfirm thunderbird vesktop-bin bitwarden catppuccin-cursors-mocha neovim nextcloud-client fzf evince xclip lazygit btop thunar
+sudo pacman -S --noconfirm alacritty bat bitwarden btop cargo-binstall dust evince eza fzf git-delta lazygit neovim nextcloud-client nushell ripgrep rust starship thunar thunderbird zellij
+
 ```
 
 ______________________________________________________________________
 
-Next install all additional rust binaries:
+A few programs I use are only in the [AUR](https://aur.archlinux.org/).
+To install them automatically, use a packman wrapper like [yay](https://github.com/Jguer/yay).
+Then you can install them all at once:
 
 ```bash
-cargo binstall eza du-dust bat starship zellij cargo-info cargo-update nu alacritty git-delta ripgrep rm-improved cargo-mommy kanata
+yay -S --noconfirm vesktop-bin catppuccin-cursors-mocha
+```
+
+______________________________________________________________________
+
+Next install all binaries, that are only avliable on cargo:
+
+```bash
+cargo binstall cargo-mommy kanata
 ```
 
 ______________________________________________________________________

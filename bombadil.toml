@@ -13,6 +13,7 @@ prehooks = [
   "mkdir -p ~/.config/bat/themes",
   "mkdir -p ~/.config/dunst/",
   "mkdir -p ~/.config/eza",
+  "mkdir -p ~/.config/ghostty/",
   "mkdir -p ~/.config/lazygit",
   "mkdir -p ~/.config/hypr/",
   "mkdir -p ~/.config/waybar/",
@@ -54,6 +55,7 @@ nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
 nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
 alacritty = { source = "shell/alacritty.toml" , target = ".alacritty.toml" }
+ghostty = { source = "shell/config.ghostty" , target = ".config/ghostty/config" }
 
 # ulaucher
 ulauncher_extensions = { source = "ulauncher/extensions.json", target = ".config/ulauncher/extensions.json" }

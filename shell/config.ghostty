@@ -2,3 +2,4 @@ theme = Catppuccin Mocha
 font-family = "FiraCode Nerd Font Mono"
 command = "zellij options --default-shell nu"
 background-opacity = 0.82
+mouse-scroll-multiplier = 1

@@ -115,5 +115,6 @@ vim.filetype.add {
   extension = {
     gitconfig = 'gitconfig',
     sshconfig = 'sshconfig',
+    ghostty = 'config',
   },
 }

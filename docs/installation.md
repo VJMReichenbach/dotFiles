@@ -46,7 +46,7 @@ ______________________________________________________________________
 Next install all binaries, that are only avliable on cargo:
 
 ```bash
-cargo binstall cargo-mommy kanata
+cargo binstall cargo-mommy cargo-update kanata
 ```
 
 ______________________________________________________________________

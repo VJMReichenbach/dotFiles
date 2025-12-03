@@ -27,7 +27,7 @@ Then I like to install a couple programs I find useful:
 **Arch**:
 
 ```bash
-sudo pacman -S --noconfirm alacritty bat bitwarden btop cargo-binstall dust evince eza fzf ghostty git-delta lazygit neovim nextcloud-client nushell ripgrep rust starship thunar thunderbird zellij
+sudo pacman -S --noconfirm bat bitwarden btop cargo-binstall dust evince eza fzf ghostty git-delta lazygit neovim nextcloud-client nushell ripgrep rust starship thunar thunderbird zellij
 
 ```
 
@@ -51,10 +51,9 @@ cargo binstall cargo-mommy cargo-update kanata
 
 ______________________________________________________________________
 
-Before finishing up, install the **catppuccin** themes for **alacritty**, **bat**, **btop**, **delta**, **lazygit** and **ulauncher** and also the [candy-icons](https://github.com/EliverLara/candy-icons) icon pack:
+Before finishing up, install the **catppuccin** themes for various applications and also the [candy-icons](https://github.com/EliverLara/candy-icons) icon pack:
 
 ```bash
-~/my_dotfiles/scripts/install_alacritty_themes.sh
 ~/my_dotfiles/scripts/install_bat_themes.sh
 ~/my_dotfiles/scripts/install_btop_theme.sh
 ~/my_dotfiles/scripts/install_delta_themes.sh

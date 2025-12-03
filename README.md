@@ -9,7 +9,7 @@ See [installation](/docs/installation.md) for instructions.
 
 - Distro: [Endeavor OS](https://endeavouros.com/)
 - Display Server: [Wayland](https://wayland.freedesktop.org/) using the [Hyprland](https://hypr.land/) compositor
-- Terminal Emulator: [Alacritty](https://alacritty.org/)
+- Terminal Emulator: [Ghostty](https://ghostty.org/)
 - Terminal Multiplexer: [Zellij](https://zellij.dev/)
 - Shell: [Nushell](https://www.nushell.sh/)/[Bash](https://www.gnu.org/software/bash/)
 - Prompt: [Starship](https://starship.rs/)

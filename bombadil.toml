@@ -54,7 +54,6 @@ starship = { source = "shell/starship.toml", target = ".config/starship.toml" }
 nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
 nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
-alacritty = { source = "shell/alacritty.toml" , target = ".alacritty.toml" }
 ghostty = { source = "shell/config.ghostty" , target = ".config/ghostty/config" }
 
 # ulaucher

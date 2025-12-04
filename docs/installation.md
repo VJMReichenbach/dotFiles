@@ -57,7 +57,6 @@ Before finishing up, install the **catppuccin** themes for various applications 
 ~/my_dotfiles/scripts/install_btop_theme.sh
 ~/my_dotfiles/scripts/install_delta_themes.sh
 ~/my_dotfiles/scripts/install_icon_theme.sh
-~/my_dotfiles/scripts/install_hyprland_colors.sh
 ~/my_dotfiles/scripts/install_lazygit_themes.sh
 ```
 

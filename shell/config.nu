@@ -38,11 +38,11 @@ $env.config.keybindings ++= [{
     event: {
         send: executehostcommand
         cmd: "commandline edit --append (
-            ls **/*
+        let dir = (ls **/*
             | where type == dir
             | get name
             | input list --fuzzy
-                $'Please choose a (ansi magenta)directory(ansi reset) to (ansi cyan_underline)insert(ansi reset):'
+                $'Please choose a (ansi magenta)directory(ansi reset) to (ansi cyan_underline)insert(ansi reset):'); if ($dir == null) {echo ""} else {echo $dir};
         )"
     }
 }]

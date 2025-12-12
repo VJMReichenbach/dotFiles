@@ -24,6 +24,9 @@ let lazygit_conf = [$lazygit_base, 'config.yml'] | str join
 let lazygit_theme = [$lazygit_base, 'catppuccin-mocha-pink.yml'] | str join
 $env.LG_CONFIG_FILE = [$lazygit_conf, "," ,$lazygit_theme] | str join
 
+# to make sure that TUIs on ssh servers run correct (e.g. journalctl)
+$env.TERM = 'xterm-256color'
+
 # Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu

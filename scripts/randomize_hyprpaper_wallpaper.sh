@@ -83,4 +83,4 @@ done
 RANDOM_WALLPAPER="${AVAILABLE_WALLS[RANDOM % ${#AVAILABLE_WALLS[@]}]}"
 
 # Apply the selected wallpaper
-hyprctl hyprpaper reload ,"$RANDOM_WALLPAPER"
+hyprctl hyprpaper wallpaper ,"$RANDOM_WALLPAPER",cover

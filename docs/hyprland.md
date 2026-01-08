@@ -4,7 +4,7 @@ I use [hyprland](https://hypr.land).
 First, install the programs below
 
 ```bash
-yay -S --noconfirm hyprland hyprpaper hyprshot cliphist nwg-look dunst waybar wofi hyprpolkitagent xdg-desktop-portal-gtk
+yay -S --noconfirm hyprland hyprlock hyprpaper hyprshot cliphist nwg-look dunst waybar wofi hyprpolkitagent xdg-desktop-portal-gtk xdg-desktop-portal-hyprland
 ```
 
 additionally, if you need brightness controll (e.g. on a laptop) install this:

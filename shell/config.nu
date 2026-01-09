@@ -77,7 +77,7 @@ alias cacu = ca install-update -l
 alias ucap = ca install-update -a
 
 # nvim
-alias v = nvim .
+alias v = nvim
 
 # bat
 alias cbat = bat --decorations never

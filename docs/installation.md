@@ -98,6 +98,24 @@ sudo systemctl enable --now fwupd-refresh.timer
 
 ______________________________________________________________________
 
+To make sure the power button script runs, you need to configure systemd to ignore the power button event:
+
+```bash
+sudo nvim /etc/systemd/logind.conf
+```
+
+Add:
+
+```conf
+HandlePowerKey=ignore
+HandlePowerKeyLongPress=ignore
+PowerKeyIgnoreInhibited=yes
+```
+
+Then reboot.
+
+______________________________________________________________________
+
 Lastly setup toml-bombadil and link the dotfiles:
 
 ```bash

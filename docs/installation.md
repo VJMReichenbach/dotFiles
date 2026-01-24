@@ -27,7 +27,7 @@ Then I like to install a couple programs I find useful:
 **Arch**:
 
 ```bash
-sudo pacman -S --noconfirm 7zip bat bitwarden btop cargo-binstall dust evince eza file-roller fwupd fzf ghostty git-delta gvfs-mtp gvfs lazygit libmtp mtpfs network-manager-applet neovim nextcloud-client nushell ripgrep rust starship tar thunar thunar-archive-plugin thunar-volman thunderbird unrar unzip zellij
+sudo pacman -S --noconfirm 7zip bat bitwarden btop cargo-binstall dust evince eza file-roller fwupd fzf ghostty git-delta gvfs-mtp gvfs lazygit libmtp mtpfs network-manager-applet neovim nextcloud-client nushell qt5-wayland qt6-wayland ripgrep rust starship tar thunar thunar-archive-plugin thunar-volman thunderbird unrar unzip zellij
 ```
 
 ______________________________________________________________________

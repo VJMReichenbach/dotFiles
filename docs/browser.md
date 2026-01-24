@@ -10,6 +10,14 @@ yay -S --noconfirm librewolf-bin
 
 Then, if desired, go to `settings -> Privacy&Security -> Cookies and Site Data -> Uncheck: Delete cookies and site data when LibreWolf is closed`
 
+To disable the forced light theme, that librewolf enforces for privacy reasons, go to `about:config` and change the following settings:
+
+```
+privacy.resistFingerprinting = false
+privacy.fingerprintingProtection = true
+privacy.fingerprintingProtection.overrides = +AllTargets,-CSSPrefersColorScheme
+```
+
 After that, install the following extensions:
 
 - [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)

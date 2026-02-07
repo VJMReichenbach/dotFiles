@@ -1,11 +1,8 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
-  main = 'nvim-treesitter.config', -- Sets main module to use for opts
-  dependencies = {},
-  -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
-  opts = {
-    ensure_installed = {
+  config = function()
+    local filetypes = {
       'bash',
       'diff',
       'lua',
@@ -16,12 +13,14 @@ return {
       'rust',
       'vim',
       'vimdoc',
-    },
-    ignore_install = { 'latex' },
-    -- Autoinstall languages that are not installed
-    auto_install = true,
-    highlight = {
-      enable = true,
-    },
-  },
+    }
+
+    require('nvim-treesitter').install(filetypes)
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = filetypes,
+      callback = function()
+        vim.treesitter.start()
+      end,
+    })
+  end,
 }

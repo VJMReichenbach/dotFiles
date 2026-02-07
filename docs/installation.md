@@ -42,6 +42,16 @@ yay -S --noconfirm vesktop-bin catppuccin-cursors-mocha
 
 ______________________________________________________________________
 
+I don't use [Mason](https://github.com/mason-org/mason.nvim) anymore to manage the external programs for neovim.
+So I need to install all language servers, linters and formatters via the system package manager.
+Some of them are only in the AUR, so I am using `yay` again:
+
+```bash
+yay -S ruff ty rust-analyzer lua-language-server texlab tinymist stylua mdformat tex-fmt typstyle superhtml
+```
+
+______________________________________________________________________
+
 Next install all binaries, that are only avliable on cargo:
 
 ```bash

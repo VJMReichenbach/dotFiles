@@ -21,4 +21,7 @@ def modmask-to-mods [mask: int] {
 
 let binds = hyprctl binds -j | from json | select modmask key description | where description != ""
 
-$binds | update modmask {|row| modmask-to-mods $row.modmask}
+let text = $binds | update modmask {|row| modmask-to-mods $row.modmask} | to html --theme="github" | str replace "#ffffff" "#1e1e2e" | str replace "#3e3e3e" "#cdd6f4"
+$text | save -f /tmp/hyprland_keybindings.html
+
+yad --html --uri="file:///tmp/hyprland_keybindings.html" --title="Hyprland Keybindings"

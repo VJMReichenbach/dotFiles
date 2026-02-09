@@ -52,9 +52,8 @@ $env.config.completions.partial = true
 ###########################
 # alias
 
-# rm
 # removes neovim config
-alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/my_dotfiles/.dots/
+alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/my_dotfiles/.dots/neovim/
 
 # kills currently running waybar instances and starts a new one
 def refresh-waybar [] {

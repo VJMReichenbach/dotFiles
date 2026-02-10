@@ -38,7 +38,7 @@ neovim = { source = "neovim",  target = ".config/nvim" }
 gitconfig = { source = "./git/default.gitconfig", target = ".gitconfig" }
 
 # keyboard
-kanata_config = { source = "./keyboard/kanata.kbd", target = "/etc/kanata/kanata.kbd" }
+kanata_config = { source = "./keyboard/default.kanata", target = "/etc/kanata/kanata.kbd" }
 
 # cli
 bat_config = { source = "cli/bat_config" , target = ".config/bat/config"}

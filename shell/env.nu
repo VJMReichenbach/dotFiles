@@ -3,6 +3,7 @@ use std/util "path add"
 
 ## PATH
 path add "~/go/bin"
+path add "~/.bun/bin"
 
 ## EPICS
 # $env.EPICS_BASE = ([$env.HOME, '/EPICS/epics-base'] | str join)

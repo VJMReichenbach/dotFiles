@@ -18,6 +18,7 @@ alias cbat='bat --decorations never'
 alias cg='cd $(git rev-parse --show-toplevel)'
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/home/valentin/.bun/bin:$PATH"
 
 # to make sure that TUIs on ssh servers run correct (e.g. journalctl)
 export TERM=xterm-256color

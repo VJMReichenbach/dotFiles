@@ -228,3 +228,5 @@ default_shell "nu"
 default_layout "compact"
 
 show_startup_tips false
+
+scrollback_editor "/usr/bin/nvim"

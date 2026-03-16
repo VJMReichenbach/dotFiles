@@ -20,7 +20,7 @@ First you need to clone this repository and my neovim config:
 
 ```bash
 git clone https://github.com/VJMReichenbach/dotFiles.git ~/my_dotfiles
-git clone https://github.com/VJMReichenbach/nvim.git ~/my_dotfiles/neovim
+git clone https://github.com/VJMReichenbach/nvim.git ~/nvim
 ln -s $HOME/nvim $HOME/my_dotfiles/neovim
 ```
 

@@ -47,6 +47,17 @@ $env.config.keybindings ++= [{
     }
 }]
 
+$env.config.keybindings ++= [{
+    name: fuzzy_dir
+    modifier: control
+    keycode: char_7
+    mode: [emacs, vi_normal, vi_insert]
+    event: {
+        send: executehostcommand
+        cmd: "tldr-picker"
+    }
+}]
+
 $env.config.completions.partial = true
 
 ###########################
@@ -59,6 +70,12 @@ alias rmconfig = rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/
 def refresh-waybar [] {
     do -i {pkill waybar} # ignores errors
     hyprctl dispatch exec waybar
+}
+
+# interactively picks a command and pipes it into tldr
+def tldr-picker [] {
+    let command = tldr -l | fzf
+    tldr $command
 }
 
 # xclip

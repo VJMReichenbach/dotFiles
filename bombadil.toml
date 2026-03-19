@@ -18,21 +18,17 @@ prehooks = [
   "mkdir -p ~/.config/hypr/",
   "mkdir -p ~/.config/waybar/",
   "mkdir -p ~/.config/wofi/",
-  "mkdir -p ~/.greeter_conf/"
+  "mkdir -p ~/.greeter_conf/",
 ]
 
-posthooks = [
-  "mkdir -p ~/GitHub",
-  "mkdir -p ~/EldosHD-GitHub",
-  "touch ~/.ssh/other.sshconfig"
-]
+posthooks = ["mkdir -p ~/GitHub", "mkdir -p ~/EldosHD-GitHub", "touch ~/.ssh/other.sshconfig"]
 
 [settings.dots]
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
 # and `target` shall be relative to $HOME directory or absolute.
 
 # editors
-neovim = { source = "neovim",  target = ".config/nvim" }
+neovim = { source = "neovim", target = ".config/nvim" }
 
 # gitconfig 
 gitconfig = { source = "./git/default.gitconfig", target = ".gitconfig" }
@@ -41,20 +37,20 @@ gitconfig = { source = "./git/default.gitconfig", target = ".gitconfig" }
 kanata_config = { source = "./keyboard/default.kanata", target = "/etc/kanata/kanata.kbd" }
 
 # cli
-bat_config = { source = "cli/bat_config" , target = ".config/bat/config"}
-pycodestyle = { source = "cli/pycodestyle.toml" , target = ".config/pycodestyle"}
-eza = { source = "cli/eza_theme.yml" , target = ".config/eza/theme.yml"}
-lazygit = { source = "cli/lazygit.yml" , target = ".config/lazygit/config.yml"}
+bat_config = { source = "cli/bat_config", target = ".config/bat/config" }
+pycodestyle = { source = "cli/pycodestyle.toml", target = ".config/pycodestyle" }
+eza = { source = "cli/eza_theme.yml", target = ".config/eza/theme.yml" }
+lazygit = { source = "cli/lazygit.yml", target = ".config/lazygit/config.yml" }
 sshconfig = { source = "cli/ssh_config", target = ".ssh/config" }
 
 # shell
 bashrc = { source = "shell/bashrc", target = ".bashrc" }
 profile = { source = "shell/profile", target = ".profile" }
 starship = { source = "shell/starship.toml", target = ".config/starship.toml" }
-nuenv = { source = "shell/env.nu" , target = ".config/nushell/env.nu"}
-nuconfig = { source = "shell/config.nu" , target = ".config/nushell/config.nu"}
+nuenv = { source = "shell/env.nu", target = ".config/nushell/env.nu" }
+nuconfig = { source = "shell/config.nu", target = ".config/nushell/config.nu" }
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
-ghostty = { source = "shell/config.ghostty" , target = ".config/ghostty/config" }
+ghostty = { source = "shell/config.ghostty", target = ".config/ghostty/config" }
 
 # ulaucher
 ulauncher_extensions = { source = "ulauncher/extensions.json", target = ".config/ulauncher/extensions.json" }
@@ -62,22 +58,22 @@ ulauncher_settings = { source = "ulauncher/settings.json", target = ".config/ula
 ulauncher_shortcuts = { source = "ulauncher/shortcuts.json", target = ".config/ulauncher/shortcuts.json" }
 
 # desktop
-hyprland_config = { source = 'desktop/hyprland.conf', target = ".config/hypr/hyprland.conf"}
-hyprland_monitors = { source = 'desktop/monitors_default.conf', target = ".config/hypr/monitors.conf"}
-hyprpaper_config = { source = 'desktop/hyprpaper.conf', target = ".config/hypr/hyprpaper.conf"}
-hyprlock_config = { source = 'desktop/hyprlock.conf', target = ".config/hypr/hyprlock.conf"}
-waybar_config = { source = 'desktop/waybar/config.jsonc', target = ".config/waybar/config.jsonc"}
-waybar_css = { source = 'desktop/waybar/style.css', target = ".config/waybar/style.css"}
-waybar_css_extra = { source = 'desktop/waybar/default_import.css', target = ".config/waybar/profile_specific.css"}
-waybar_powermenu = { source = 'desktop/waybar/power_menu.xml', target = ".config/waybar/power_menu.xml"}
-waybar_tailscale_script = { source = 'scripts/tailscale_status.sh', target = '.config/waybar/scripts/tailscale_status.sh'}
-wofi_css = { source = 'desktop/wofi/style.css', target = ".config/wofi/style.css"}
+hyprland_config = { source = 'desktop/hyprland.conf', target = ".config/hypr/hyprland.conf" }
+hyprland_monitors = { source = 'desktop/monitors_default.conf', target = ".config/hypr/monitors.conf" }
+hyprpaper_config = { source = 'desktop/hyprpaper.conf', target = ".config/hypr/hyprpaper.conf" }
+hyprlock_config = { source = 'desktop/hyprlock.conf', target = ".config/hypr/hyprlock.conf" }
+waybar_config = { source = 'desktop/waybar/config.jsonc', target = ".config/waybar/config.jsonc" }
+waybar_css = { source = 'desktop/waybar/style.css', target = ".config/waybar/style.css" }
+waybar_css_extra = { source = 'desktop/waybar/default_import.css', target = ".config/waybar/profile_specific.css" }
+waybar_powermenu = { source = 'desktop/waybar/power_menu.xml', target = ".config/waybar/power_menu.xml" }
+waybar_tailscale_script = { source = 'scripts/tailscale_status.sh', target = '.config/waybar/scripts/tailscale_status.sh' }
+wofi_css = { source = 'desktop/wofi/style.css', target = ".config/wofi/style.css" }
 dunstrc = { source = "desktop/dunstrc", target = ".config/dunst/dunstrc" }
 
 # greeter
-greetd = { source = 'greeter/config.toml', target = ".greeter_conf/config.toml"}
-regreet = { source = 'greeter/regreet.toml', target = ".greeter_conf/regreet.toml"}
-hyprland_greeter = { source = 'greeter/hyprland.conf', target = ".greeter_conf/hyprland.conf"}
+greetd = { source = 'greeter/config.toml', target = ".greeter_conf/config.toml" }
+regreet = { source = 'greeter/regreet.toml', target = ".greeter_conf/regreet.toml" }
+hyprland_greeter = { source = 'greeter/hyprland.conf', target = ".greeter_conf/hyprland.conf" }
 
 [profiles.desktop.dots]
 hyprland_monitors = { source = 'desktop/monitors_desktop.conf' }

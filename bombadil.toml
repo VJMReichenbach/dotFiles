@@ -16,6 +16,7 @@ prehooks = [
   "mkdir -p ~/.config/ghostty/",
   "mkdir -p ~/.config/lazygit",
   "mkdir -p ~/.config/hypr/",
+  "mkdir -p ~/.config/tealdeer/",
   "mkdir -p ~/.config/waybar/",
   "mkdir -p ~/.config/wofi/",
   "mkdir -p ~/.greeter_conf/",
@@ -38,6 +39,7 @@ kanata_config = { source = "./keyboard/default.kanata", target = "/etc/kanata/ka
 
 # cli
 bat_config = { source = "cli/bat_config", target = ".config/bat/config" }
+tealdeer = { source = "cli/tealdeer.toml", target = ".config/tealdeer/config.toml" }
 pycodestyle = { source = "cli/pycodestyle.toml", target = ".config/pycodestyle" }
 eza = { source = "cli/eza_theme.yml", target = ".config/eza/theme.yml" }
 lazygit = { source = "cli/lazygit.yml", target = ".config/lazygit/config.yml" }

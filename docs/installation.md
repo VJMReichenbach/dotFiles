@@ -19,8 +19,8 @@ ______________________________________________________________________
 First you need to clone this repository and my neovim config:
 
 ```bash
-git clone https://github.com/VJMReichenbach/dotFiles.git ~/my_dotfiles
-git clone https://github.com/VJMReichenbach/nvim.git ~/nvim
+git clone https://github.com/VJMReichenbach/dotFiles.git $HOME/my_dotfiles
+git clone https://github.com/VJMReichenbach/nvim.git $HOME/nvim
 ln -s $HOME/nvim $HOME/my_dotfiles/neovim
 ```
 

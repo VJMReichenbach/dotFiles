@@ -104,7 +104,7 @@ window {
 }
 
 #input * {
-  outline: 4px solid @red!important;
+  outline: 4px solid @red;
 }
 
 /* Text */
@@ -134,5 +134,5 @@ window {
 }
 
 #entry:drop(active) {
-  background-color: @pink!important;
+  background-color: @pink;
 }

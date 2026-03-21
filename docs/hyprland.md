@@ -7,6 +7,25 @@ First, install the programs below
 yay -S --noconfirm hyprland hyprlock hyprpaper hyprshot cliphist nwg-look dunst waybar wofi hyprpolkitagent xdg-desktop-portal-gtk xdg-desktop-portal-hyprland
 ```
 
+then install all hyprland plugins
+
+```bash
+hyprpm update
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+```
+
+then enable all required plugins
+
+```bash
+hyprpm enable hyprexpo
+```
+
+You can reload all plugins immediatly (is also done during statup) via
+
+```bash
+hyprpm reload
+```
+
 additionally, if you need brightness controll (e.g. on a laptop) install this:
 
 ```bash

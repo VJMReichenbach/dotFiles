@@ -54,27 +54,13 @@
 
 * {
   font-family: 'FiraCode Nerd Font Mono', monospace;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Window */
 window {
-  margin: 0px;
-  padding: 10px;
   border: none;
   background-color: rgba(0,0,0,0);
-  animation: slideIn 0.1s ease-in-out both;
-}
-
-/* Slide In */
-@keyframes slideIn {
-  0% {
-     opacity: 0;
-  }
-
-  100% {
-     opacity: 1;
-  }
 }
 
 /* Inner Box */
@@ -83,49 +69,33 @@ window {
   padding: 10px;
   border: none;
   background-color: rgba(0,0,0,0);
-  animation: fadeIn 0.1s ease-in-out both;
   opacity: 0.8;
-}
-
-/* Fade In */
-@keyframes fadeIn {
-  0% {
-     opacity: 0;
-  }
-
-  100% {
-     opacity: 1;
-  }
 }
 
 /* Outer Box */
 #outer-box {
   margin: 5px;
   padding: 10px;
-  border: none;
-  background-color: rgba(0,0,0,0);
+  border: 0.11em solid @pink;
+  border-radius: 15px;
+  background-color: @base;
 }
 
 /* Scroll */
 #scroll {
-  margin: 0px;
-  padding: 10px;
   border: none;
   border-radius: 15px;
-  /* background-color: @base-transparent; */
   background-color: rgba(0,0,0,0);
 }
 
 /* Input */
 #input {
-  margin: 5px 20px;
+  margin: 5px;
   padding: 10px;
-  /* border: 0.11em solid @base-transparent; */
   border: none;
   border-radius: 15px;
   color: @text;
-  background-color: @base-transparent;
-  animation: fadeIn 0.1s ease-in-out both;
+  background-color: @surface0;
 }
 
 #input image {
@@ -142,11 +112,11 @@ window {
   margin: 5px;
   border: none;
   color: @text;
-  animation: fadeIn 0.1s ease-in-out both;
 }
 
 #entry {
-  background-color: @base-transparent;
+  background-color: @surface0;
+  margin: 2px;
 }
 
 #entry arrow {

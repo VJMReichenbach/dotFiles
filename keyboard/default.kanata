@@ -1,11 +1,18 @@
 ;; kanata config file
 ;; :set filetype=lisp
+;; Caps to escape/control configuration for Kanata
+
 (defsrc
-	caps
-	esc
+  caps
+  esc
 )
 
-(deflayer default
-	  esc
-	  caps
+(defalias
+  escctrl (tap-hold 100 100 esc lmet)
+)
+
+
+(deflayer base
+  @escctrl
+  caps
 )

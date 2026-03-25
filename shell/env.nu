@@ -5,6 +5,7 @@ use std/util "path add"
 path add "~/go/bin"
 path add "~/.bun/bin"
 path add "~/.local/bin"
+path add "~/.local/share/bob/nvim-bin/"
 
 ## EPICS
 # $env.EPICS_BASE = ([$env.HOME, '/EPICS/epics-base'] | str join)

@@ -229,4 +229,4 @@ default_layout "compact"
 
 show_startup_tips false
 
-scrollback_editor "/usr/bin/nvim"
+scrollback_editor "/home/valentin/.local/share/bob/nvim-bin/nvim"

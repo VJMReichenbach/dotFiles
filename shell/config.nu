@@ -1,5 +1,3 @@
-$env.EDITOR = "/usr/bin/nvim"
-
 $env.config = {
     # Sort alphabetically
     rm: {

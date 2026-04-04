@@ -22,7 +22,7 @@ prehooks = [
   "mkdir -p ~/.greeter_conf/",
 ]
 
-posthooks = ["mkdir -p ~/GitHub", "mkdir -p ~/EldosHD-GitHub", "touch ~/.ssh/other.sshconfig"]
+posthooks = ["mkdir -p ~/GitHub", "mkdir -p ~/EldosHD-GitHub"]
 
 [settings.dots]
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
@@ -43,7 +43,6 @@ tealdeer = { source = "cli/tealdeer.toml", target = ".config/tealdeer/config.tom
 pycodestyle = { source = "cli/pycodestyle.toml", target = ".config/pycodestyle" }
 eza = { source = "cli/eza_theme.yml", target = ".config/eza/theme.yml" }
 lazygit = { source = "cli/lazygit.yml", target = ".config/lazygit/config.yml" }
-sshconfig = { source = "cli/ssh_config", target = ".ssh/config" }
 
 # shell
 bashrc = { source = "shell/bashrc", target = ".bashrc" }

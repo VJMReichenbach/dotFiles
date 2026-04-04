@@ -14,7 +14,6 @@ poweroff = ["systemctl", "poweroff"]
 [appearance]
 greeting_msg = "Hi Vali <3"
 
-
 [widget.clock]
 # strftime format argument
 # See https://docs.rs/jiff/0.1.14/jiff/fmt/strtime/index.html#conversion-specifications
@@ -26,4 +25,3 @@ resolution = "100ms"
 # Override system timezone (IANA Time Zone Database name, aka /etc/zoneinfo path)
 # Remove to use the system time zone.
 timezone = "Europe/Berlin"
-

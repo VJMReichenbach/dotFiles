@@ -22,7 +22,7 @@ prehooks = [
   "mkdir -p ~/.greeter_conf/",
 ]
 
-posthooks = ["mkdir -p ~/GitHub", "mkdir -p ~/EldosHD-GitHub"]
+posthooks = ["mkdir -p ~/git/vjmreichenbach-github", "mkdir -p ~/git/eldoshd-github", "mkdir -p ~/git/codeberg"]
 
 [settings.dots]
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`

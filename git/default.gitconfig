@@ -6,7 +6,7 @@
   path = ~/.config/delta/catppuccin.gitconfig # delta theme
 
 # include uni email
-[includeIf "gitdir:~/EldosHD-GitHub/"] # !!! GitHub has an capital "H" !!!
+[includeIf "gitdir:~/git/eldoshd-github/"]
   path = ~/my_dotfiles/git/eldoshd.gitconfig
 
 [core]

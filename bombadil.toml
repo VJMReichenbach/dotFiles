@@ -5,7 +5,6 @@ dotfiles_dir = "my_dotfiles"
 
 # An array of post install shell commands
 prehooks = [
-  "rm -f ~/.config/ulauncher/*.json",
   "rm -rf ~/.config/nvim",
   "rm -f ~/.bashrc",
   "rm -f ~/.profile",
@@ -52,11 +51,6 @@ nuenv = { source = "shell/env.nu", target = ".config/nushell/env.nu" }
 nuconfig = { source = "shell/config.nu", target = ".config/nushell/config.nu" }
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
 ghostty = { source = "shell/config.ghostty", target = ".config/ghostty/config" }
-
-# ulaucher
-ulauncher_extensions = { source = "ulauncher/extensions.json", target = ".config/ulauncher/extensions.json" }
-ulauncher_settings = { source = "ulauncher/settings.json", target = ".config/ulauncher/settings.json" }
-ulauncher_shortcuts = { source = "ulauncher/shortcuts.json", target = ".config/ulauncher/shortcuts.json" }
 
 # desktop
 hyprland_config = { source = 'desktop/hyprland.conf', target = ".config/hypr/hyprland.conf" }
